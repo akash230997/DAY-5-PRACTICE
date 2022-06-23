@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(100, 148, 237, 0.572);
+        }
+        #main{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            /* display: inline-block; */
+            perspective: 800px;
+        }
+        .main1{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            perspective: 800px;
+            transform-style: preserve-3d;
+            transform: rotateY(60deg);
+            transform-origin: top;
+        }
+       .box{
+        width: 200px;
+        height: 200px;
+        background-color: rgba(0, 0, 255, 0.363);
+        transition: all 1s linear;
+        /* transform: rotate(0deg); */
+
+       }
+       .box:hover{
+        border-radius: 50%;
+        transform: rotate(360deg);
+        /* transform: translate(500px , 400px); */
+        /* transform: translate(100px,200px); */
+        background-color: blueviolet;
+       }
+       .box1{
+        width: 200px;
+        height: 200px;
+        background-color: rgba(224, 16, 99, 0.813);
+        margin: 100px 0;
+        transition: transform 3s ease;
+        transform: rotatex(0deg);
+        line-height: 200px;
+        color: white;
+       }
+       .box1:hover{
+        transform: translateY(200px) rotateX(180deg);
+       }
+       .box2{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(239, 160, 14);
+        margin: 100px 0;
+        transition: transform 3s ease;
+        transform: rotatex(0deg);
+        line-height: 200px;
+        color: white;
+       }
+       .box2:hover{
+        transform: translateX(200px) rotateY(180deg);
+       }
+       .box3{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(14, 224, 182);
+        margin: 100px 0;
+        transition: transform 3s ease;
+        transform: rotatex(0deg);
+        line-height: 200px;
+        color: white;
+       }
+       .box3:hover{
+        transform:skew(60deg) rotateY(180deg);
+       }
+       .box4{
+        width: 200px;
+        height: 100px;
+        background-color: rgb(196, 224, 14);
+        margin: 100px 0;
+        transition: transform 3s ease;
+        transform: rotatex(0deg);
+        line-height: 100px;
+        color: white;
+       }
+       .box4:hover{
+        transform: rotateX(80deg);
+        transform-origin: top;
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="box"></div>
+    </div>
+    <div id="main">
+        <div class="box1" align="center">AKASH MEENA</div>
+    </div>
+    <div id="main">
+        <div class="box2" align="center">AKASH MEENA</div>
+    </div>
+    <div id="main">
+        <div class="box3" align="center">AKASH MEENA</div>
+    </div>
+    <div class="main1">
+        <div class="box4" align="center">AKASH MEENA</div>
+    </div>
+</body>
+</html>
